@@ -38,7 +38,8 @@ func deal(d deck, handsize int) (deck, deck) {
 	return d[:handsize], d[handsize:]
 }
 
-// Converts a deck to a string
+// converts a deck to a string
 func toString(d deck) string {
 	return strings.Join([]string(d), ",")
+	// return []string(d)
 }
